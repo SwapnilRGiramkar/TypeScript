@@ -1,0 +1,14 @@
+"use strict";
+let studentName = "Swapnil Giramkar";
+let studentAge = 24;
+const collageName = "Annatrao pawar college of Enginnering ";
+let departmentName = "Information Technology Engineering";
+let cgpa = 8.92;
+let ispassed = true;
+console.log("\n********* Student Information *********\n");
+console.log("Student Name    : " + studentName);
+console.log("Student Age     : " + studentAge);
+console.log("College Name    : " + collageName);
+console.log("Department Name : " + departmentName);
+console.log("CGPA            : " + cgpa);
+console.log("Passed          : " + ispassed);

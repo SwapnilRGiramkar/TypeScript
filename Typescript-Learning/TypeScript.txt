@@ -1,0 +1,157 @@
+====================================================
+        TypeScript Day 1 – Quiz Answers Date -07/07/2026
+====================================================
+
+1. Who developed TypeScript?
+
+Answer:
+TypeScript was developed by Microsoft and was first released in 2012.
+
+----------------------------------------------------
+
+2. What is the file extension for a TypeScript file?
+
+Answer:
+The file extension for a TypeScript file is:
+
+.ts
+
+Examples:
+- app.ts
+- index.ts
+- main.ts
+
+----------------------------------------------------
+
+3. Which command compiles a TypeScript file?
+
+Answer:
+
+tsc app.ts
+
+This command converts app.ts into app.js.
+
+----------------------------------------------------
+
+4. Which command runs the compiled JavaScript file?
+
+Answer:
+
+node app.js
+
+This command executes the compiled JavaScript file.
+
+----------------------------------------------------
+
+5. What is the difference between TypeScript and JavaScript?
+
+Answer:
+
+JavaScript:
+- JavaScript is a scripting language.
+- It does not support static typing.
+- Errors are usually found while the program is running.
+- Runs directly in browsers and Node.js.
+
+TypeScript:
+- TypeScript is a superset of JavaScript.
+- It supports static typing.
+- Many errors are detected during compilation.
+- It must be compiled into JavaScript before execution.
+
+----------------------------------------------------
+
+6. Name three basic TypeScript data types.
+
+Answer:
+
+1. string – Stores text.
+2. number – Stores numeric values.
+3. boolean – Stores either true or false.
+
+Example:
+
+let name: string = "Swapnil";
+let age: number = 23;
+let isWorking: boolean = true;
+
+----------------------------------------------------
+
+7. Can you assign a string to a variable declared as number?
+
+Answer:
+
+No.
+
+TypeScript does not allow assigning a string value to a variable declared as a number.
+
+Example:
+
+let age: number = 25;
+
+age = "Twenty Five"; // Error
+
+Reason:
+"Twenty Five" is a string, but age is declared as a number.
+
+----------------------------------------------------
+
+8. When should you use const instead of let?
+
+Answer:
+
+Use const when the value should not change after it is assigned.
+
+Example:
+
+const country = "India";
+
+Use let when the value may change later.
+
+Example:
+
+let city = "Pune";
+city = "Mumbai";
+
+----------------------------------------------------
+
+9. What does console.log() do?
+
+Answer:
+
+console.log() prints information or output to the console (terminal).
+
+It is mainly used for:
+- Displaying values
+- Debugging programs
+- Checking program output
+
+Example:
+
+let name = "Swapnil";
+
+console.log(name);
+
+Output:
+
+Swapnil
+
+----------------------------------------------------
+
+10. Why is TypeScript useful in large projects?
+
+Answer:
+
+TypeScript is useful in large projects because it:
+
+• Detects errors before the code runs.
+• Improves code readability.
+• Makes code easier to maintain.
+• Provides better auto-completion and IntelliSense.
+• Helps teams collaborate efficiently.
+• Reduces bugs by enforcing type safety.
+• Improves code quality and maintainability.
+
+====================================================
+End of TypeScript Day 1 Quiz Answers
+====================================================

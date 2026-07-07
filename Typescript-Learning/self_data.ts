@@ -1,0 +1,14 @@
+let myname:String="Swapnil";
+let age:number=24;
+let profession: String ="QA Engineer";
+let company: String ="Aloha Technology";
+let isstatus:boolean =true;
+let ismarried: boolean =false;
+let salary:number =28000;
+console.log(myname);
+console.log(age);
+console.log(profession);
+console.log(company);
+console.log(isstatus);
+console.log(ismarried);
+console.log(salary);

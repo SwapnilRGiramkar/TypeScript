@@ -1,0 +1,15 @@
+"use strict";
+let myname = "Swapnil";
+let age = 24;
+let profession = "QA Engineer";
+let company = "Aloha Technology";
+let isstatus = true;
+let ismarried = false;
+let salary = 28000;
+console.log(myname);
+console.log(age);
+console.log(profession);
+console.log(company);
+console.log(isstatus);
+console.log(ismarried);
+console.log(salary);

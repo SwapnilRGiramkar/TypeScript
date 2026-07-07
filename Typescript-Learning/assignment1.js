@@ -1,0 +1,11 @@
+"use strict";
+let empName = "Swapnil";
+let empAge = 24;
+let empId = 101;
+let empSalary = 35000;
+let isWorking = true;
+console.log(empName);
+console.log(empAge);
+console.log(empId);
+console.log(empSalary);
+console.log(isWorking);

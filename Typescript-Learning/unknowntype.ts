@@ -1,10 +1,10 @@
 // unknown type 
-let value: unknown;
-value="Swapnil";
-value =23;
-value=false;
+let value1: unknown;
+value1="Swapnil";
+value1 =23;
+value1=false;
 
-console.log(value);
+console.log(value1);
 
 let data:unknown ="typescript";
 if(typeof data === "string")

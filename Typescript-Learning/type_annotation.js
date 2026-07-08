@@ -1,0 +1,14 @@
+"use strict";
+let myName = "Swapnil";
+let age = 24;
+let collegeNmae = "Annatrao pawar college of Enginnering ";
+let deptName = "Information Technology Engineering";
+let cgpa = 8.92;
+let isPassed = true;
+console.log("\n********* Student Information *********\n");
+console.log("Student Name    : " + myName);
+console.log("Student Age     : " + age);
+console.log("College Name    : " + collegeNmae);
+console.log("Department Name : " + deptName);
+console.log("CGPA            : " + cgpa);
+console.log("Passed          : " + isPassed);

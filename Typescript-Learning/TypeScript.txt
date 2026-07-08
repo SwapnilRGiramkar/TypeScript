@@ -153,5 +153,433 @@ TypeScript is useful in large projects because it:
 • Improves code quality and maintainability.
 
 ====================================================
-End of TypeScript Day 1 Quiz Answers
-====================================================
+==========================================================
+              TypeScript Day 2 Notes
+      (Data Types, Arrays & Tuples)
+==========================================================
+
+1. TYPE INFERENCE
+----------------------------------------------------------
+
+Definition:
+Type Inference is a feature where TypeScript automatically
+determines the type of a variable based on the value assigned
+to it.
+
+Example:
+
+let name = "Swapnil";
+let age = 23;
+let isWorking = true;
+
+TypeScript automatically infers:
+- name -> string
+- age -> number
+- isWorking -> boolean
+
+Example:
+
+let city = "Pune";
+
+city = "Mumbai";    // Correct
+city = 123;         // Error
+
+Advantages:
+- Less code
+- Cleaner syntax
+- Automatic type detection
+
+----------------------------------------------------------
+
+2. TYPE ANNOTATION
+----------------------------------------------------------
+
+Definition:
+Type Annotation means explicitly specifying the type of a
+variable.
+
+Syntax:
+
+variableName: dataType = value
+
+Example:
+
+let name: string = "Swapnil";
+let age: number = 23;
+let isWorking: boolean = true;
+
+Difference:
+
+Type Inference:
+let age = 23;
+
+Type Annotation:
+let age: number = 23;
+
+----------------------------------------------------------
+
+3. ANY DATA TYPE
+----------------------------------------------------------
+
+Definition:
+The any type allows a variable to store any type of value.
+
+Example:
+
+let value: any = "Hello";
+
+value = 100;
+value = true;
+value = [];
+value = {};
+
+Advantages:
+- Can store any value.
+
+Disadvantages:
+- No type checking.
+- Can introduce bugs.
+- Should be avoided whenever possible.
+
+----------------------------------------------------------
+
+4. UNKNOWN DATA TYPE
+----------------------------------------------------------
+
+Definition:
+unknown is a safer alternative to any.
+
+Example:
+
+let value: unknown;
+
+value = "Hello";
+value = 100;
+value = true;
+
+Before using unknown, check its type.
+
+Example:
+
+let value: unknown = "TypeScript";
+
+if (typeof value === "string") {
+    console.log(value.toUpperCase());
+}
+
+Difference between any and unknown
+
+any
+----
+- No type checking
+- Unsafe
+- Can directly call methods
+
+unknown
+--------
+- Requires type checking
+- Safer
+- Cannot use methods until type is verified
+
+----------------------------------------------------------
+
+5. NULL
+----------------------------------------------------------
+
+Definition:
+null represents an intentional empty value.
+
+Example:
+
+let manager: string | null = null;
+
+manager = "Rahul";
+manager = null;
+
+Use Cases:
+- No manager assigned
+- No selected item
+- No logged-in user
+
+----------------------------------------------------------
+
+6. UNDEFINED
+----------------------------------------------------------
+
+Definition:
+undefined means a variable has been declared but no value
+has been assigned.
+
+Example:
+
+let email: string | undefined;
+
+console.log(email);
+
+Output:
+
+undefined
+
+----------------------------------------------------------
+
+7. VOID
+----------------------------------------------------------
+
+Definition:
+void is mainly used as the return type of functions that do
+not return any value.
+
+Example:
+
+function greet(): void {
+    console.log("Welcome");
+}
+
+----------------------------------------------------------
+
+8. NEVER
+----------------------------------------------------------
+
+Definition:
+never represents a function that never successfully finishes.
+
+Example:
+
+function throwError(message: string): never {
+    throw new Error(message);
+}
+
+Examples:
+- Throwing an error
+- Infinite loop
+
+----------------------------------------------------------
+
+9. ARRAYS
+----------------------------------------------------------
+
+Definition:
+An array stores multiple values of the same data type.
+
+String Array
+
+let fruits: string[] = [
+    "Apple",
+    "Banana",
+    "Mango"
+];
+
+Number Array
+
+let marks: number[] = [
+    85,
+    90,
+    95
+];
+
+Boolean Array
+
+let result: boolean[] = [
+    true,
+    false,
+    true
+];
+
+Mixed Array
+
+let data: any[] = [
+    "Swapnil",
+    23,
+    true
+];
+
+----------------------------------------------------------
+
+10. ARRAY OPERATIONS
+----------------------------------------------------------
+
+Create Array
+
+let numbers: number[] = [
+    10,
+    20,
+    30
+];
+
+Access Element
+
+console.log(numbers[0]);
+
+Output:
+
+10
+
+Add Element
+
+numbers.push(40);
+
+Remove Last Element
+
+numbers.pop();
+
+Find Length
+
+console.log(numbers.length);
+
+Output:
+
+4
+
+----------------------------------------------------------
+
+11. TUPLES
+----------------------------------------------------------
+
+Definition:
+A tuple stores a fixed number of values where each value has
+a predefined type.
+
+Example:
+
+let student: [number, string];
+
+student = [101, "Swapnil"];
+
+Correct:
+
+student = [102, "Rahul"];
+
+Incorrect:
+
+student = ["Rahul", 102];
+
+Reason:
+The order of values must match the tuple definition.
+
+----------------------------------------------------------
+
+12. READONLY ARRAYS
+----------------------------------------------------------
+
+Definition:
+A readonly array cannot be modified after creation.
+
+Example:
+
+let colors: readonly string[] = [
+    "Red",
+    "Green",
+    "Blue"
+];
+
+Allowed:
+
+console.log(colors);
+
+Not Allowed:
+
+colors.push("Yellow");
+
+Reason:
+Readonly arrays prevent accidental modifications.
+
+----------------------------------------------------------
+
+REAL-WORLD EXAMPLE
+----------------------------------------------------------
+
+let employeeNames: string[] = [
+    "Rahul",
+    "Amit",
+    "Swapnil"
+];
+
+console.log(employeeNames);
+
+----------------------------------------------------------
+
+SUMMARY
+----------------------------------------------------------
+
+Today's Topics:
+
+✔ Type Inference
+✔ Type Annotation
+✔ any
+✔ unknown
+✔ null
+✔ undefined
+✔ void
+✔ never
+✔ Arrays
+✔ Array Operations
+✔ Tuples
+✔ Readonly Arrays
+
+----------------------------------------------------------
+
+KEY DIFFERENCES
+----------------------------------------------------------
+
+Type Inference
+- Type is detected automatically.
+
+Type Annotation
+- Type is written manually.
+
+----------------------------------------------------------
+
+any vs unknown
+
+any
+- Unsafe
+- No type checking
+- Can call methods directly
+
+unknown
+- Safe
+- Requires type checking
+- Better than any
+
+----------------------------------------------------------
+
+null vs undefined
+
+null
+- Intentionally empty value.
+
+undefined
+- Variable declared but no value assigned.
+
+----------------------------------------------------------
+
+Array vs Tuple
+
+Array
+- Stores multiple values of the same type.
+- Size can change.
+
+Tuple
+- Fixed size.
+- Different data types allowed.
+- Order matters.
+
+----------------------------------------------------------
+
+IMPORTANT INTERVIEW POINTS
+----------------------------------------------------------
+
+1. TypeScript automatically detects data types using Type Inference.
+2. Type Annotation explicitly defines the variable type.
+3. Avoid using any unless absolutely necessary.
+4. Prefer unknown over any for safer code.
+5. Arrays store multiple values of the same type.
+6. Tuples store a fixed number of values with specific types.
+7. Readonly arrays cannot be modified.
+8. void is mainly used for functions that return nothing.
+9. never is used for functions that never complete normally.
+10. TypeScript improves code quality through static type checking.
+
+==========================================================
+                END OF DAY 2 NOTES
+==========================================================

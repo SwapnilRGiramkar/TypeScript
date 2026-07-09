@@ -1,4 +1,3 @@
-"use strict";
 let numbers = [10, 20, 30, 40, 50];
 //For Loop 
 for (let i = 0; i < numbers.length; i++) {
@@ -12,3 +11,4 @@ for (let number of numbers) {
 numbers.forEach((num) => {
     console.log(num);
 });
+export {};

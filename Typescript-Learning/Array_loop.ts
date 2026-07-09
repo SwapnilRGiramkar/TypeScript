@@ -1,3 +1,5 @@
+export {};
+
 let numbers:number[]=[10,20,30,40,50];
 //For Loop 
 for (let i=0;i<numbers.length;i++)

@@ -12,3 +12,11 @@ console.log(colors);
 //Removing last Element from an array
 colors.pop();
 console.log(colors);
+
+//Removing First Element from an array
+colors.shift();
+console.log(colors);
+
+//Adding elements at the beginning of an array
+colors.unshift("White");
+console.log(colors);
